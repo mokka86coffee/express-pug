@@ -1,0 +1,14 @@
+extends templates/header.pug
+block body
+  h1 aa
+  if mas.length > 0
+    table.table.table-dark
+      thead
+        tr
+          th Заголовок таблицы
+      tbody
+        each elem in mas
+          tr
+            td #{elem.a}
+  else
+    p nothing to show
